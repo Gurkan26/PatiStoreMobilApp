@@ -13,11 +13,12 @@ export default SearchBar;
 
 const styles = StyleSheet.create({
   input:{
-    backgroundColor:"#EEE",
+    backgroundColor:'grey',
     borderRadius:12,
     paddingLeft:13,
     marginHorizontal:7,
     marginTop:8,
-    marginBottom:15
+    marginBottom:15,
+    color:'black',
   }
 });

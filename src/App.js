@@ -32,7 +32,7 @@ function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Text style={styles.headerText}>PATİSTORE</Text>
-      <SearchBar onSearch={handleSearch} />
+      <SearchBar style={styles.input} onSearch={handleSearch} />
       <FlatList
         keyExtractor={item => item.id.toString()}
         /* 
@@ -55,14 +55,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'purple',
     fontSize: 50,
-    textAlign: 'left',
+    textAlign: 'center',
     backgroundColor: 'white',
   },
   input: {
-    fontSize: 14,
-    backgroundColor: 'grey',
-    borderRadius: 15,
-    shadowRadius: 20,
+    padding: 10,
+    borderWidth: 1,
+    borderColor: '#eceff1',
+    borderRadius: 10,
   },
 });
 export default App;
